@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SqLite Project</string>
+    <string name="signUp">you do not have an account? <b><u><font color = "#C23CE7"> Login</font></u></b></string>
+    <string name="login">you have an account? <b><u><font color = "#C23CE7"> SignUp Here</font></u></b></string>
+</resources>
