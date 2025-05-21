@@ -1,9 +1,12 @@
+// build.gradle.kts (Project Level)
+
 buildscript {
     dependencies {
-        classpath(libs.google.services)
+        classpath("com.google.gms:google-services:4.4.1") // replace with your actual version if using libs.versions.toml
     }
 }
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 plugins {
     alias(libs.plugins.androidApplication) apply false
+    id("com.google.gms.google-services") apply false
 }
