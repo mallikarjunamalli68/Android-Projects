@@ -189,13 +189,16 @@ fun LoginActivity(modifier: Modifier, navController: NavHostController, authView
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold)
                 }
-                Text(text = "Forgot Password?",
-                    modifier = Modifier
-                        .padding(top = 20.dp)
-                        .align(alignment = Alignment.CenterHorizontally),
-                    fontSize = 15.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Black)
+                TextButton( modifier = Modifier
+                    .align(alignment = Alignment.CenterHorizontally),
+                    onClick = { /* Ignoring onClick */ }) {
+                    Text(text = "Forgot Password?",
+                        textDecoration = TextDecoration.Underline,
+                        color = Color.Black,
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
 
                 Row(modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center
