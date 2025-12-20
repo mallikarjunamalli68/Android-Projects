@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "447229885944",
+    "project_id": "firstapplication-ceb5e",
+    "storage_bucket": "firstapplication-ceb5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447229885944:android:d2a3c10f73dfdc86db6a0d",
+        "android_client_info": {
+          "package_name": "com.example.firstapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFwuIwgnNhe1LLYEY0a8IoBtUgMMr79pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
