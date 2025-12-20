@@ -215,7 +215,8 @@ fun LoginActivity(modifier: Modifier, navController: NavHostController, authView
                     }) { 
                         Text(text = "SignUp",
                             textDecoration = TextDecoration.Underline,
-                            color = Color.Blue
+                            color = Color.Blue,
+                            fontWeight = FontWeight.Bold
                         )
                     }
                 }
