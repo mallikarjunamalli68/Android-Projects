@@ -26,6 +26,15 @@ class AuthViewModel : ViewModel() {
         if (email.isEmpty() || password.isEmpty()) {
             _authState.value = AuthSate.Error("Email and password cannot be empty")
             return
+        } else if (password.length < 6) {
+            _authState.value = AuthSate.Error("Password must be at least 6 characters long")
+            return
+        } else if (!email.contains("@")) {
+            _authState.value = AuthSate.Error("Invalid email format")
+            return
+        } else if (password.contains(" ")) {
+            _authState.value = AuthSate.Error("Password cannot contain spaces")
+            return
         }
         _authState.value = AuthSate.Loading
         auth.signInWithEmailAndPassword(email, password)
@@ -41,6 +50,15 @@ class AuthViewModel : ViewModel() {
     fun signUp(email: String, password: String) {
         if (email.isEmpty() || password.isEmpty()) {
             _authState.value = AuthSate.Error("Email and password cannot be empty")
+            return
+        } else if (password.length < 6) {
+            _authState.value = AuthSate.Error("Password must be at least 6 characters long")
+            return
+        } else if (!email.contains("@")) {
+            _authState.value = AuthSate.Error("Invalid email format")
+            return
+        } else if (password.contains(" ")) {
+            _authState.value = AuthSate.Error("Password cannot contain spaces")
             return
         }
         _authState.value = AuthSate.Loading
